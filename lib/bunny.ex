@@ -1,7 +1,7 @@
 defmodule Bunny do
-  defdelegate run(jobs, config), to: Benchee
-  defdelegate hop(jobs, config), to: Benchee, as: :run
-  defdelegate eat(jobs, config), to: Benchee, as: :run
+  defdelegate run(jobs, config),  to: Benchee
+  defdelegate hop(jobs, config),  to: Benchee, as: :run
+  defdelegate eat(jobs, config),  to: Benchee, as: :run
   defdelegate jump(jobs, config), to: Benchee, as: :run
 
   defdelegate init(),                           to: Benchee
