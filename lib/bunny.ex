@@ -1,8 +1,28 @@
 defmodule Bunny do
-  defdelegate run(jobs, config),  to: Benchee
-  defdelegate hop(jobs, config),  to: Benchee, as: :run
-  defdelegate eat(jobs, config),  to: Benchee, as: :run
-  defdelegate jump(jobs, config), to: Benchee, as: :run
+  def run(jobs, config \\ []) do
+    IO.puts """
+    Bunny will take care of that for you!
+
+       ( Y)
+      ( . .)
+     o(") (")
+    """
+
+    Benchee.run(jobs, config)
+
+    IO.puts """
+
+    Bunny is done!
+    
+     () ()
+     (* *)
+    o( 0 )
+    """
+  end
+  
+  defdelegate hop(jobs, config \\ []),  to: __MODULE__, as: :run
+  defdelegate eat(jobs, config \\ []),  to: __MODULE__, as: :run
+  defdelegate jump(jobs, config \\ []), to: __MODULE__, as: :run
 
   defdelegate init(),                           to: Benchee
   defdelegate init(config),                     to: Benchee
