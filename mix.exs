@@ -4,7 +4,7 @@ defmodule Bunny.MixProject do
   def project do
     [
       app: :bunny,
-      version: "01.04.2018",
+      version: "1.4.2018",
       elixir: "~> 1.4",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
