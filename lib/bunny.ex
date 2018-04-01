@@ -1,4 +1,8 @@
 defmodule Bunny do
+  @moduledoc """
+  The bunnytastic way to benchmarking.
+  """
+  
   def run(jobs, config \\ []) do
     IO.puts """
     Bunny will take care of that for you!

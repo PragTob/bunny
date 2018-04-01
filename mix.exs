@@ -9,6 +9,10 @@ defmodule Bunny.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
+      docs: [
+        extras: ["README.md"],
+        main: "readme"
+      ],
       name: "bunny",
       source_url: "https://github.com/PragTob/bunny",
       description: """
@@ -28,6 +32,8 @@ defmodule Bunny.MixProject do
   defp deps do
     [
       {:benchee, ">= 0.12.0"},
+      {:ex_doc,  "~> 0.11",  only: :dev},
+      {:earmark, "~> 1.0",   only: :dev}
     ]
   end
 
