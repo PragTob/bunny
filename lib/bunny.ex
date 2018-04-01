@@ -13,16 +13,17 @@ defmodule Bunny do
     IO.puts """
 
     Bunny is done!
-    
+
      () ()
      (* *)
     o( 0 )
     """
   end
   
-  defdelegate hop(jobs, config \\ []),  to: __MODULE__, as: :run
-  defdelegate eat(jobs, config \\ []),  to: __MODULE__, as: :run
-  defdelegate jump(jobs, config \\ []), to: __MODULE__, as: :run
+  defdelegate hop(jobs, config \\ []),   to: __MODULE__, as: :run
+  defdelegate eat(jobs, config \\ []),   to: __MODULE__, as: :run
+  defdelegate jump(jobs, config \\ []),  to: __MODULE__, as: :run
+  defdelegate sleep(jobs, config \\ []), to: __MODULE__, as: :run
 
   defdelegate init(),                           to: Benchee
   defdelegate init(config),                     to: Benchee
