@@ -4,7 +4,7 @@ defmodule Bunny.MixProject do
   def project do
     [
       app: :bunny,
-      version: "1.4.2018",
+      version: "2.4.2018",
       elixir: "~> 1.4",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -16,7 +16,7 @@ defmodule Bunny.MixProject do
       name: "bunny",
       source_url: "https://github.com/PragTob/bunny",
       description: """
-      The bunnytastic benchmarking library formerly known as benchee.
+      This was an april's fools joke of a benchmarking library. It'll remain functional though.
       """
     ]
   end
