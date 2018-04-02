@@ -1,3 +1,6 @@
+**this was an April's fools joke.** However, **bunny will remain functional.**
+It's only implemented as a thing wrapper around benchee so unless we completely break API (which I don't see coming) it'll remain functional. Bunnytastic benchmarking to everyone.
+
 # Bunny [![Hex Version](https://img.shields.io/hexpm/v/bunny.svg)](https://hex.pm/packages/bunny) [![docs](https://img.shields.io/badge/docs-hexpm-blue.svg)](https://hexdocs.pm/benchee/) [![Inline docs](http://inch-ci.org/github/PragTob/benchee.svg)](http://inch-ci.org/github/PragTob/benchee) [![Build Status](https://travis-ci.org/PragTob/benchee.svg?branch=master)](https://travis-ci.org/PragTob/benchee) [![Coverage Status](https://coveralls.io/repos/github/PragTob/benchee/badge.svg?branch=master)](https://coveralls.io/github/PragTob/benchee?branch=master)
 
 The bunnytastic benchmarking library formerly known as benchee. After all, benchmarking a function is just like a bunny eatings its input!
