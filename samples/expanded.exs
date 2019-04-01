@@ -7,6 +7,7 @@ map_fun = fn(i) -> [i, i * i] end
 |> Bunny.benchmark("flat_map", fn -> Enum.flat_map(list, map_fun) end)
 |> Bunny.benchmark("map.flatten",
                      fn -> list |> Enum.map(map_fun) |> List.flatten end)
-|> Bunny.measure
+|> Bunny.collect
 |> Bunny.statistics
-|> Bunny.Formatters.Console.output
+|> Bunny.relative_statistics
+|> Bunny.Formatter.output(Bunny.Formatters.Console, %{})
