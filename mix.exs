@@ -4,8 +4,8 @@ defmodule Bunny.MixProject do
   def project do
     [
       app: :bunny,
-      version: "2.4.2018",
-      elixir: "~> 1.4",
+      version: "2.4.2019",
+      elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
@@ -31,9 +31,9 @@ defmodule Bunny.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:benchee, ">= 0.12.0"},
-      {:ex_doc,  "~> 0.11",  only: :dev},
-      {:earmark, "~> 1.0",   only: :dev}
+      {:benchee, "~> 1.0"},
+      {:ex_doc, "~> 0.11", only: :dev},
+      {:earmark, "~> 1.0", only: :dev}
     ]
   end
 
@@ -42,7 +42,7 @@ defmodule Bunny.MixProject do
       maintainers: ["Tobias Pfeiffer", "Devon Estes"],
       licenses: ["MIT"],
       links: %{
-        "github"     => "https://github.com/PragTob/bunny"
+        "github" => "https://github.com/PragTob/bunny"
       }
     ]
   end

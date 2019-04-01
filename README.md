@@ -38,7 +38,7 @@ Bunny.eat(%{
 ```
 
 ```
-tobi@speedy ~/github/bunny $ mix run samples/eat.exs 
+tobi@speedy ~/github/bunny $ mix run samples/eat.exs
 Bunny will take care of that for you!
 
    ( Y)
@@ -49,26 +49,27 @@ Operating System: Linux
 CPU Information: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
 Number of Available Cores: 8
 Available memory: 15.61 GB
-Elixir 1.6.3
-Erlang 20.2
+Elixir 1.8.0
+Erlang 21.2.2
+
 Benchmark suite executing with the following configuration:
 warmup: 2 s
 time: 5 s
+memory time: 0 ns
 parallel: 1
 inputs: none specified
 Estimated total run time: 14 s
-
 
 Benchmarking flat_map...
 Benchmarking map.flatten...
 
 Name                  ips        average  deviation         median         99th %
-flat_map           2.23 K      448.25 μs    ±14.33%         430 μs         790 μs
-map.flatten        1.17 K      857.84 μs    ±21.57%         796 μs     1426.98 μs
+flat_map           2.32 K      430.51 μs    ±17.42%      412.75 μs      792.88 μs
+map.flatten        1.22 K      817.24 μs    ±21.23%      750.79 μs     1241.15 μs
 
-Comparison: 
-flat_map           2.23 K
-map.flatten        1.17 K - 1.91x slower
+Comparison:
+flat_map           2.32 K
+map.flatten        1.22 K - 1.90x slower +386.73 μs
 
 Bunny is done!
 
